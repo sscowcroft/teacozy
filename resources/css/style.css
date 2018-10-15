@@ -32,3 +32,25 @@ nav span {
 .content{
   padding-top:69px;
 }
+
+.image-content.mission {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
+  height: 700px;
+}
+
+.month {
+  display:flex;
+  width:1000px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.month img {
+  height:200px;
+  width:300px;
+}
+
+.image-content.locations {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg");
+  height: 500px;
+}
