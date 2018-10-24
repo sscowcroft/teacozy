@@ -1,10 +1,14 @@
+/*General*/
+
 body {
   font-family: Helvetica;
   font-size: 22px;
   color: seashell;
-  background-color:black;
+  background-color: black;
   opacity: 0.9;
 }
+
+/*Header*/
 
 header {
   display: flex;
@@ -12,9 +16,10 @@ header {
   position: fixed;
   border-bottom: 1px solid seashell;
   justify-content:space-between;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
   height: 69px;
+  color: seashell;
 }
 
 header img {
@@ -25,41 +30,77 @@ header img {
 nav span {
   display:inline-block;
   padding: 20px 10px;
-  text-decoration:underline;
+  text-decoration: underline;
   color: seashell;
 }
+
+/* Main Content*/
 
 .content{
   padding-top:69px;
   justify-content: center;
 }
 
+/*Mission*/
+
+.mission{
+  display:flex;
+  background: black;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 50px 0;
+}
+
+.mission > *{
+  width: 100%;
+  background: black;
+  color: white;
+  text-align: center;
+}
+
 .image-content.mission {
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
+  background-position: center;
   height: 700px;
   width:1200px;
 }
 
+/*Tea of the Month*/
+
 .month {
-  display:flex;
-  width:1000px;
+  width: 960px;
+  margin: auto;
+  text-align: center;
+}
+
+.teas{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  flex-wrap: wrap;
 }
 
 .month img {
   height:200px;
   width:300px;
+  margin:4px;
 }
+
+/*Locations*/
 
 .location {
   display:flex;
   flex-direction: row;
+  text-align: center;
+  justify-content: center;
 }
 
 .image-content.locations {
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg");
+  background-position: center;
+  background-size: cover;
   height: 500px;
   width: 1200px;
 }
@@ -92,4 +133,20 @@ nav span {
   background-color: black;
   opacity:1;
   margin: 20px;
+}
+
+/*Footer*/
+
+.info {
+  display: flex;
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+}
+
+
+.copyright {
+  padding: 20px 0;
 }
