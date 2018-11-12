@@ -91,7 +91,7 @@ nav span {
 /*Locations*/
 
 .location {
-  display:flex;
+  display: flex;
   flex-direction: row;
   text-align: center;
   justify-content: center;
@@ -137,15 +137,17 @@ nav span {
 
 /*Footer*/
 
+footer {
+  text-align: center;
+}
+
 .info {
-  display: flex;
-  text-align: center;
+  display: inline-block;
 }
 
-.title {
-  text-align: center;
+.copyright{
+  text-align: left;
 }
-
 
 .copyright {
   padding: 20px 0;
